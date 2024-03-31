@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="f787e4b3-7ad6-4c1e-9fd1-e20561b162d9" data-root-id="p2756" style="display: contents;"></div>
+  
+    <script type="application/json" id="p2767">
+      {"38e46a7e-d5ef-43aa-b1b6-b163586d760d":{"version":"3.2.1","title":"Bokeh Application","roots":[{"type":"object","name":"Column","id":"p2756","attributes":{"children":[{"type":"object","name":"Select","id":"p2754","attributes":{"title":"Theft Type:","options":["All","GRAND THEFT FROM LOCKED AUTO","PETTY THEFT SHOPLIFTING","GRAND THEFT OF PROPERTY","GRAND THEFT PICKPOCKET","PETTY THEFT OF PROPERTY","GRAND THEFT FROM PERSON","PETTY THEFT FROM A BUILDING","GRAND THEFT FROM UNLOCKED AUTO","GRAND THEFT FROM A BUILDING","ATTEMPTED SHOPLIFTING","PETTY THEFT FROM LOCKED AUTO","PETTY THEFT FROM UNLOCKED AUTO","PETTY THEFT WITH PRIOR","GRAND THEFT BICYCLE","LOST PROPERTY, PETTY THEFT","LOST PROPERTY, GRAND THEFT","GRAND THEFT BY PROSTITUTE","GRAND THEFT SHOPLIFTING","ATTEMPTED THEFT FROM LOCKED VEHICLE","GRAND THEFT AUTO STRIP","ATTEMPTED GRAND THEFT PURSESNATCH","THEFT OF CHECKS OR CREDIT CARDS","PETTY THEFT BICYCLE","ATTEMPTED GRAND THEFT FROM PERSON","LICENSE PLATE OR TAB, THEFT OF","PETTY THEFT PHONE BOOTH","PETTY THEFT AUTO STRIP","THEFT OF COMPUTERS OR CELL PHONES","GRAND THEFT PURSESNATCH","THEFT FROM MERCHANT OR LIBRARY","THEFT OF UTILITY SERVICES","GRAND THEFT COIN OPERATED MACHINE","THEFT OF WRITTEN INSTRUMENT","THEFT, GRAND, OF FIREARM","EMBEZZLEMENT FROM DEPENDENT OR ELDER ADULT BY CARETAKER","GRAND THEFT MOTORCYCLE STRIP","THEFT, GRAND, BY FIDUCIARY, &gt;$400 IN 12 MONTHS","ATTEMPTED THEFT FROM A BUILDING","PETTY THEFT COIN OPERATED MACHINE","THEFT OF ANIMALS (GENERAL)","ATTEMPTED PETTY THEFT OF PROPERTY","THEFT OF TELECOMMUNICATION SERVICES, INCL. CLONE PHONE","ATTEMPTED GRAND THEFT PICKPOCKET","PETTY THEFT MOTORCYCLE STRIP","ATTEMPTED AUTO STRIP","THEFT, BICYCLE, &lt;$50, NO SERIAL NUMBER","ATTEMPTED THEFT FROM UNLOCKED VEHICLE","THEFT, DRUNK ROLL, &gt;$400","THEFT, BICYCLE, &lt;$50, SERIAL NUMBER KNOWN","ATTEMPTED THEFT OF A BICYCLE","THEFT, DRUNK ROLL, $50-$200","THEFT, DRUNK ROLL, &lt;$50","ATTEMPTED THEFT COIN OPERATED MACHINE","THEFT, DRUNK ROLL, $200-$400","GRAND THEFT PHONE BOOTH","TRADE SECRETS, THEFT OR UNAUTHORIZED COPYING","ATTEMPTED MOTORCYCLE STRIP","THEFT, BOAT","THEFT, DRUNK ROLL, ATT.","LOOTING DURING STATE OF EMERGENCY","ATTEMPTED THEFT PHONE BOOTH","THEFT, ANIMAL, ATT.","THEFT, GRAND, AGRICULTURAL"],"value":"All Types of Theft"}},{"type":"object","name":"Select","id":"p2755","attributes":{"title":"Resolution:","options":["All","NONE","ARREST, CITED","ARREST, BOOKED","DISTRICT ATTORNEY REFUSES TO PROSECUTE","NOT PROSECUTED","COMPLAINANT REFUSES TO PROSECUTE","UNFOUNDED","PROSECUTED BY OUTSIDE AGENCY","EXCEPTIONAL CLEARANCE","LOCATED","PSYCHOPATHIC CASE","PROSECUTED FOR LESSER OFFENSE"],"value":"All Types of Resolution"}},{"type":"object","name":"Figure","id":"p2716","attributes":{"width":800,"height":400,"x_range":{"type":"object","name":"DataRange1d","id":"p2717"},"y_range":{"type":"object","name":"DataRange1d","id":"p2718"},"x_scale":{"type":"object","name":"LinearScale","id":"p2726"},"y_scale":{"type":"object","name":"LinearScale","id":"p2727"},"title":{"type":"object","name":"Title","id":"p2719","attributes":{"text":"Theft Incidents per Year"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p2751","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p2713","attributes":{"selected":{"type":"object","name":"Selection","id":"p2714","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p2715"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAA"},"shape":[15],"dtype":"int32","order":"little"}],["Year",{"type":"ndarray","array":{"type":"bytes","data":"0wcAANQHAADVBwAA1gcAANcHAADYBwAA2QcAANoHAADbBwAA3AcAAN0HAADeBwAA3wcAAOAHAADhBwAA"},"shape":[15],"dtype":"int32","order":"little"}],["Count",{"type":"ndarray","array":{"type":"bytes","data":"SWYAABFfAACKYgAAW2oAAP9jAAAkZAAAS2MAAJReAAAdZAAAKHgAAHiNAADkkwAA/KMAAK2dAABiugAA"},"shape":[15],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p2752","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p2753"}}},"glyph":{"type":"object","name":"VBar","id":"p2748","attributes":{"x":{"type":"field","field":"Year"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"Count"},"line_color":{"type":"value","value":"skyblue"},"fill_color":{"type":"value","value":"skyblue"},"hatch_color":{"type":"value","value":"skyblue"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p2749","attributes":{"x":{"type":"field","field":"Year"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"Count"},"line_color":{"type":"value","value":"skyblue"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"skyblue"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"skyblue"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p2750","attributes":{"x":{"type":"field","field":"Year"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"Count"},"line_color":{"type":"value","value":"skyblue"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"skyblue"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"skyblue"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p2725","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p2738"},{"type":"object","name":"WheelZoomTool","id":"p2739"},{"type":"object","name":"BoxZoomTool","id":"p2740","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p2741","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p2742"},{"type":"object","name":"ResetTool","id":"p2743"},{"type":"object","name":"HelpTool","id":"p2744"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p2733","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p2734","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p2735"},"axis_label":"Number of thefts","major_label_policy":{"type":"object","name":"AllLabels","id":"p2736"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p2728","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p2729","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p2730"},"axis_label":"Year","major_label_policy":{"type":"object","name":"AllLabels","id":"p2731"}}}],"center":[{"type":"object","name":"Grid","id":"p2732","attributes":{"axis":{"id":"p2728"}}},{"type":"object","name":"Grid","id":"p2737","attributes":{"dimension":1,"axis":{"id":"p2733"}}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p2767').textContent;
+              const render_items = [{"docid":"38e46a7e-d5ef-43aa-b1b6-b163586d760d","roots":{"p2756":"f787e4b3-7ad6-4c1e-9fd1-e20561b162d9"},"root_ids":["p2756"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
