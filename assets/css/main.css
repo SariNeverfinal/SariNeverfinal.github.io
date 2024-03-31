@@ -76,6 +76,10 @@ iframe{
   border:none;
 }
 
+iframe > * {
+  margin:0;
+}
+
 /** Lists */
 ul,
 ol {
