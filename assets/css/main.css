@@ -33,6 +33,7 @@ body {
   min-height: 100vh;
   background-color: var(--dark-color);
   color: white;
+  overflow-x: hidden;
 }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
@@ -70,11 +71,9 @@ figcaption {
   margin-top: 10px;
 }
 
-/** Links */
-a, a:visited{
-  color: #3f3f3f;
-  text-decoration: none;
-  font-weight: 500;
+/** iFrames */
+iframe{
+  border:none;
 }
 
 /** Lists */
@@ -99,15 +98,15 @@ h6 {
 }
 
 h1{
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 h2{
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 h3{
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 /** Wrapper and general container */
@@ -136,22 +135,23 @@ footer{
 }
 
 /** Intro Section */
-.intro-wrapper{
+.hero-wrapper{
   height: 95vh;
   background-color: var( --dark-color);
   padding: 20px;
 }
 
-.intro-inner-container{
-  background-image: url("/assets/images/cctv.jpg");
+.hero-inner-container{
+  background-image: url("/assets/images/cctv-bw.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   border-radius: 25px;
   height: 100%;
   position: relative;
 }
 
-.logo{
+.title{
   position: absolute;
   top: 40px;
   left: 50%;
@@ -175,24 +175,24 @@ footer{
   width: 50%;
 }
 
-.title-container{
+.intro-container{
   position: absolute;
   bottom: 0;
   left:0;
-  padding: 80px 50px 40px 50px;
+  padding: 70px 50px 40px 50px;
   background-color: var( --dark-color);
   border-top-right-radius: 45px;
   max-width: 800px;
 }
 
-.title-inner-wrapper{
+.intro-inner-wrapper{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
 }
 
-/* Split Container */
+/** Split Container */
 .split-wrapper{
   display: flex;
   flex-direction: row;
@@ -203,20 +203,25 @@ footer{
   width: 50%;
 }
 
-/* Highlight */
+/** Highlight */
 .highlight-box{
   background-color: var(--dark-grey-color);
   border-radius: 30px;
   padding: 30px;
 }
 
+/** Media Queries */
 @media screen and (max-width: 800px) {
   .page-container{
     padding: 0px 0px;
   }
 
-  .intro-inner-container{
-    background-position: bottom;
+  .hero-inner-container{
+    background-position: left;
+  }
+
+  .intro-container{
+    max-width: 100%;
   }
 
   .split-wrapper{
@@ -232,15 +237,23 @@ footer{
 }
 
 @media screen and (max-width: 640px) {
+  h1{
+    font-size: 2.2rem;
+  }
+  
+  h2{
+    font-size: 2rem;
+  }
+  
+  h3{
+    font-size: 1.5rem;
+  }
+
   .max-container {
     padding: 20px 30px;
   }
 
-  .intro-wrapper{
-    height: 80vh;
-  }
-
-  .title-container{
+  .intro-container{
     padding: 40px 10px 20px 10px;
   }
 
