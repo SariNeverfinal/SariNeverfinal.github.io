@@ -141,10 +141,7 @@ h3{
   
 .large-column {
   flex-grow: 1; /* Larger flex-grow value for larger width */
-}
-
-.large-column .jp-RenderedImage.jp-OutputArea-output {
-  max-width: 100%; /* Set maximum width for the figure */
+  flex-basis: 0;
 }
 
 section > * {
