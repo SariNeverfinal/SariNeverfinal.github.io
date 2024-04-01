@@ -133,12 +133,14 @@ h3{
   display: flex;
 }
 
-.small-columm {
-  flex: 1;
+.small-column {
+  flex-grow: 1; /* All columns grow equally */
+  flex-basis: 0; /* Allow flex-grow to control width */
+  margin: 0 10px; /* Add margin between columns */
 }
   
 .large-column {
-  flex: 5;
+  flex-grow: 2; /* Larger flex-grow value for larger width */
 }
 
 section > * {
