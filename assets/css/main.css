@@ -133,11 +133,13 @@ h3{
   display: flex;
 }
 
-.columm {
+.small-columm {
   flex: 1;
-  margin: 0 10px;
 }
   
+.large-column {
+  flex:2;
+}
 
 section > * {
   margin-top: 50px;
