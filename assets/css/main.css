@@ -129,6 +129,16 @@ h3{
   padding: 20px 0px;
 }
 
+.column-container {
+  display: flex;
+}
+
+.columm {
+  flex: 1;
+  margin: 0 10px;
+}
+  
+
 section > * {
   margin-top: 50px;
 }
