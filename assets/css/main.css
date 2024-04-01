@@ -138,7 +138,7 @@ h3{
 }
   
 .large-column {
-  flex: 2;
+  flex: 5;
 }
 
 section > * {
