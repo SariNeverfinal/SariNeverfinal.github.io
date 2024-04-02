@@ -62,6 +62,10 @@ img {
 }
 
 /** Figures */
+figure{
+  margin: 10px 0px;
+}
+
 figure>img {
   display: block;
 }
@@ -113,13 +117,19 @@ h3{
   font-size: 1.875rem;
 }
 
+/** Links */
+
+a, a:visited{
+  color:white;
+}
+
 /** Wrapper and general container */
 .max-container{
   padding: 70px 30px;   
   /*max-width: 1100px;*/
   margin: auto;
 }
-.mydiv ul{
+.ul{
   list-style-type: none;
 } 
 .page-container{
@@ -132,18 +142,9 @@ h3{
 }
 
 .column-container {
-  display: flex;
-}
-
-.small-column {
-  flex-grow: 1; /* All columns grow equally */
-  flex-basis: 0; /* Allow flex-grow to control width */
-  margin: 0 10px; /* Add margin between columns */
-}
-  
-.large-column {
-  flex-grow: 1; /* Larger flex-grow value for larger width */
-  flex-basis: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between columns */
 }
 
 section > * {
@@ -153,6 +154,27 @@ section > * {
 /** Footer */
 footer{
  background-color: var(--dark-grey-color);
+}
+
+/** Magazine layout */
+
+.magezine-title{
+  padding: 0 20px;
+}
+
+.magazine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 80px; 
+  padding: 20px;
+}
+
+.article h2 {
+  margin-top: 0;
+}
+
+.article .article-content-wrapper {
+  padding: 20px 0px;
 }
 
 /** Intro Section */
@@ -231,6 +253,12 @@ footer{
   padding: 30px;
 }
 
+@media screen and (max-width: 1100px) {
+  .magazine {
+    gap: 40px; 
+  }
+}
+
 /** Media Queries */
 @media screen and (max-width: 800px) {
   .page-container{
@@ -255,6 +283,11 @@ footer{
     width: 100%;
   }
   
+  .column-container {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
 }
 
 @media screen and (max-width: 640px) {
