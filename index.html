@@ -65,18 +65,25 @@
             </div>
       
             <!-- Map -->
-            <div>
-              <h3>Map</h3>
+            <div class="column-container">
+              <div class="small-column">
+                <p>
+                  We mapped the locations of reported crimes to identify spatial patterns and hotspots, focusing specifically on theft incidents. Our analysis centered on the average theft count for the year 2017, a period of particular interest due to the highest crime counts in our dataset. This exploration aimed to reveal spatial concentrations of thefts and determine whether they are concentrated in specific neighborhoods or areas within the city, such as affluent neighborhoods or tourist areas.
+                </p>
+              </div>
+              <div class="large-column">
               <figure>
                 <iframe src="choropleth_map.html" width="100%" height="550"></iframe>
                 <figcaption class="figure-caption">
                   Figure 2: Average theft counts per neighborhood in San Francisco for the year 2017
                 </figcaption>
               </figure>
+              </div>
+              <div class="small-column">
               <p>
-                We mapped the locations of reported crimes to identify spatial patterns and hotspots, focusing specifically on theft incidents. Our analysis centered on the average theft count for the year 2017, a period of particular interest due to the highest crime counts in our dataset. This exploration aimed to reveal spatial concentrations of thefts and determine whether they are concentrated in specific neighborhoods or areas within the city, such as affluent neighborhoods or tourist areas.
                 Our findings indicate that the neighborhoods of Ingleside and Park have the lowest numbers of theft counts, while Southern followed by Northern neighborhoods have the highest numbers of theft counts on average in 2017. This insight provides valuable context for understanding the distribution of theft incidents across different areas of San Francisco. [ADD EXPLANATION]
               </p>
+              </div>
             </div>
             <!-- Interactive Visualisation (Bokeh) -->
             <div>
