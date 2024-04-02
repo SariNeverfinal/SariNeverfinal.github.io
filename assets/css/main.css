@@ -64,6 +64,7 @@ img {
 /** Figures */
 figure{
   margin: 10px 0px;
+  overflow: scroll;
 }
 
 figure>img {
@@ -73,6 +74,10 @@ figure>img {
 figcaption {
   font-size: 14px;
   margin-top: 10px;
+}
+
+#ef157ba1-cc8e-4b18-9ff9-0ce8cf60f127 div{
+  width: 900px !important;
 }
 
 /** iFrames */
